@@ -159,12 +159,6 @@ a{
     .box-logo img{
         width: 40%;
     }
-    nav{
-        height: 20vh;
-    }
-    .list{
-        height: 20vh;
-    }
     .container-main{
         display: flex;
         flex-wrap: wrap; 
