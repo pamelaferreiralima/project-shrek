@@ -180,13 +180,6 @@ a{
         display: flex;
         flex-wrap: wrap;
     }
-    .box-copyright{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-    }
     .box-image img{
         display: none;
     }
