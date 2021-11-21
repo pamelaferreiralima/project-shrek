@@ -10,64 +10,11 @@
 header{
     display: flex;
     background-color: #9ACD32;
+    height: 20vh;
 }
 .logo{
     width: 11vw;
     padding: 1rem 0 2.5rem 1rem;
-}
-@media (max-width: 768px ) {
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    .box-logo{
-        background-color: #fff;
-    }
-    .box-logo img{
-        width: 30%;
-    }
-    nav{
-        height: 10vh;
-    }
-    .list{
-        height: 20vh;
-    }
-    .container-main{
-        display: flex;
-        flex-wrap: wrap; 
-        width: 100%;
-        justify-content: center;
-        padding-top: 5%;
-    }
-   .figure{
-        width: 100%;
-   }
-   .img-family{
-       height: 30vh;
-       width: 60vw;
-   }
-    .container-content{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .box-copyright{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-    }
-    .container-image{
-        background-color:#6B8E23;
-        transform: scale(1.0);
-        width: 768px;
-       
-    }
-    .box-image{
-        display: flex;
-        justify-content: space-evenly;
-        width: 50%;
-    }
 }
 nav{
     width: 100%;
@@ -107,13 +54,12 @@ h1{
     text-align: center;
 }
 .container-image img{
-    height: 17vh;
-    width: 11vw;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
 }
 .container-image{
-    width: 42vw;
-    height: 72vh;
+    width: 60vw;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
@@ -141,7 +87,7 @@ h2{
     align-items: center;
 }
 .box-news{
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     background: #9ACD32;
     font-size: 1.5em;
@@ -198,4 +144,72 @@ a{
 .footer-icon{
     width:6vw;
     height: 6vw;
+}
+
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-logo{
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    .box-logo img{
+        width: 40%;
+    }
+    nav{
+        height: 10vh;
+    }
+    .list{
+        height: 20vh;
+    }
+    .container-main{
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        padding-top: 10%;
+    }
+   .figure{
+        width: 100%;
+   }
+    .container-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-copyright{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    .box-image img{
+        display: none;
+    }
+     .box-image p{
+        display: none;
+    }
+    .box-news{
+        height: 5vh;
+    }
+    .footer-icon{
+        width: 3vw;
+    }
+}
+
+@media (max-width: 360px) {
+    .figure p{
+        display: none;
+    }
+    .container-footer li{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        height: 5vh;
+    }
 }
