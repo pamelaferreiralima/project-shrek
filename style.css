@@ -10,8 +10,8 @@
 header{
     display: flex;
     background-color: #9ACD32;
-    height: 20vh;
 }
+
 .logo{
     width: 11vw;
     padding: 1rem 0 2.5rem 1rem;
@@ -47,10 +47,10 @@ h1{
     text-align: center;
     font-size: 3rem;
     color: #556B2F;
-  
 }
 .figure p{
-    padding-top: 1em;
+    margin-bottom: 2rem;
+    margin-top: 1.5em;
     text-align: center;
 }
 .container-image img{
@@ -109,7 +109,7 @@ h2{
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50vw;
+    width: 85%;
     margin: 1.75rem;
 }
 .box-content:hover{
@@ -123,7 +123,6 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
 }
 .container-footer li{
     text-transform: uppercase;
@@ -142,8 +141,12 @@ a{
     font-weight: 600;
 }
 .footer-icon{
-    width:6vw;
-    height: 6vw;
+   width: 120px;
+   margin-top: 1rem;
+}
+.box-copyright{
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
@@ -160,16 +163,13 @@ a{
         width: 40%;
     }
     nav{
-        height: 10vh;
+        height: 100px;
     }
-    .list{
-        height: 20vh;
-    }
+   
     .container-main{
         display: flex;
         flex-wrap: wrap; 
         width: 100%;
-        height: 50vh;
         justify-content: center;
         padding-top: 10%;
     }
@@ -193,12 +193,14 @@ a{
      .box-image p{
         display: none;
     }
-    .box-news{
-        height: 5vh;
+    iframe{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2rem;
     }
-    .footer-icon{
-        width: 3vw;
-    }
+  .footer-icon{
+      width: 90px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -210,6 +212,8 @@ a{
     }
     footer{
         width: 100%;
-        height: 5vh;
+    }
+    .footer-icon{
+        width: 90px;
     }
 }
